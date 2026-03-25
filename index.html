@@ -1,252 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clowve | Ofertas</title>
-<link rel="icon" sizes="32x32" href="./assets/favicom.png">
-<link rel="icon" sizes="192x192" href="./assets/favicom.png">
-<link rel="apple-touch-icon" href="./assets/favicom.png">
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  background: url('./assets/fundo.png') no-repeat center center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  color: #fff;
-}
-
-/* overlay */
-body::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
-  backdrop-filter: blur(4px);
-}
-
-/* container */
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 420px;
-  width: 100%;
-}
-
-h1 {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-/* ===== LISTA DE PRODUTOS ===== */
-.product {
-  position: relative;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 16px;
-  padding: 12px;
-  margin-bottom: 15px;
-
-  backdrop-filter: blur(10px);
-  animation: fadeUp 0.5s ease;
-}
-
-/* badge */
-.badge {
-  position: absolute;
-  top: -8px;
-  left: 10px;
-  background: #22c55e;
-  color: #000;
-  font-size: 10px;
-  padding: 4px 8px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-/* imagem */
-.product img {
-  width: 70px;
-  height: 70px;
-  min-width: 70px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* info */
-.product-info {
-  flex: 1;
-}
-
-.product-info h2 {
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-
-/* preço */
-.price {
-  font-size: 14px;
-  font-weight: bold;
-  color: #4ade80;
-}
-
-.old-price {
-  font-size: 11px;
-  text-decoration: line-through;
-  opacity: 0.6;
-  margin-left: 6px;
-}
-
-/* urgência */
-.urgency {
-  font-size: 11px;
-  color: #f87171;
-  margin-top: 2px;
-}
-
-/* botão */
-.buy-btn {
-  margin-top: 6px;
-  display: inline-block;
-  font-size: 12px;
-  padding: 6px 10px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #22c55e, #4ade80);
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* BOTÕES */
-.btn {
-  display: block;
-  width: 100%;
-  padding: 16px;
-  margin: 10px 0;
-  border-radius: 14px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-}
-
-.btn-primary {
-  background: linear-gradient(90deg, #22c55e, #4ade80);
-  color: #000;
-}
-
-.btn-secondary {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.25);
-  color: #fff;
-}
-
-/* footer */
-.footer {
-  text-align: center;
-  font-size: 11px;
-  margin-top: 20px;
-  opacity: 0.7;
-}
-
-/* animação */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clowve | Ofertas </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/clowve.png" type="image/png">
 </head>
-
 <body>
 
-<div class="container">
+    <main class="container">
+        
+        <header class="profile-section">
+        
+            <div class="profile-image-container">
+                <img src="assets/clowve.png" alt="Foto de Perfil" class="profile-pic">
+            </div>
+            <h1 class="username">clowve.ofertas</h1>
+            
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@clowve.ofertas?is_from_webapp=1&sender_device=pc" target="_blank"> <i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/clowve_ofc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://whatsapp.com/channel/0029VbBBJMM9hXFCQ3cTbS0I" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </header>
 
-<h1>💸 Ofertas que realmente valem a pena</h1>
+        <section class="links-section">
+            <a href="https://ogbrzin.github.io/link-in-Bio-Iphone-Store/" target="_blank" class="link-btn">
+                <img src="assets/loja.png" alt="Ícone" class="btn-icon">
+                <div class="btn-text">
+                    <span class="title">Nossa Loja SHOPEE</span>
+                    <span class="subtitle">Garanta seu Iphone com desconto</span>
+                </div>
+            </a>
 
-<!-- 🔥 PRODUTO 1 -->
-<div class="product">
-  <div class="badge">🔥 MAIS VENDIDO</div>
+            <a href="https://whatsapp.com/channel/0029VbBBJMM9hXFCQ3cTbS0I" target="_blank" class="link-btn">
+                <img src="assets/clowve.png" alt="Ícone" class="btn-icon">
+                <div class="btn-text">
+                    <span class="title">GRUPO DE PROMOÇÕES</span>
+                </div>
+            </a>
+            
+            <a href="https://s.shopee.com.br/6pwFt47Q8A" target="_blank" class="link-btn">
+                <img src="assets/shopee.png" alt="Ícone" class="btn-icon">
+                <div class="btn-text">
+                    <span class="title">Todos Produtos da SHOPEE</span>
+                </div>
+            </a>
+        </section>
 
-  <img src="./assets/relogio.png">
+        <section class="subscribe-box">
+            <h2>Subscribe to Clowve.Co</h2>
+            <p>Cadastre-se para receber atualizações exclusivas por e-mail diretamente.</p>
+            <form action="https://whatsapp.com/channel/0029VbBBJMM9hXFCQ3cTbS0I" target="_blank" method="POST" class="subscribe-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="text" placeholder="Telefone" required>
+                <button type="submit">Entrar no Grupo</button>
+            </form>
+        </section>
 
-  <div class="product-info">
-    <h2>Combo completo smartwatch + fone</h2>
+        <footer class="footer">
+            <p><i class="fa-solid fa-shapes"></i> Clowve.Co | Todos os Direitos Reservados</p>
+        </footer>
 
-    <div>
-      <span class="price">R$ 59,90</span>
-      <span class="old-price">R$ 149,90</span>
-    </div>
-
-    <div class="urgency">⚡ Últimas unidades</div>
-
-    <a href="https://s.shopee.com.br/15tDmcRY1" class="buy-btn"target="_blank">💸 Ver oferta</a>
-  </div>
-</div>
-
-<!-- 🔥 PRODUTO 2 -->
-<div class="product">
-  <img src="./assets/fone.png">
-
-  <div class="product-info">
-    <h2>Fone De Ouvido M10</h2>
-
-    <div>
-      <span class="price">R$ 39,90</span>
-      <span class="old-price">R$ 79,90</span>
-    </div>
-
-    <div class="urgency">⚡ Oferta relâmpago</div>
-
-    <a href="https://s.shopee.com.br/6VJMxoGHhh" class="buy-btn"target="_blank">💸 Ver oferta</a>
-  </div>
-</div>
-
-<!-- 🔥 PRODUTO 3 -->
-<div class="product">
-  <img src="./assets/som.png">
-
-  <div class="product-info">
-    <h2>Caixa de Som Bluetooth</h2>
-
-    <div>
-      <span class="price">R$ 59,90</span>
-      <span class="old-price">R$ 120,00</span>
-    </div>
-
-    <div class="urgency">⚡ Promoção relâmpago</div>
-
-    <a href="https://s.shopee.com.br/7KsTxNPVGi" class="buy-btn" target="_blank">💸 Ver oferta</a>
-  </div>
-</div>
-
-<!-- BOTÕES -->
-<a href="#" class="btn btn-primary">🔥 Ver todas as ofertas</a>
-<a href="https://s.shopee.com.br/9ztF8QXVa4" class="btn btn-secondary" target="_blank">🎯 Cupons ativos</a>
-
-<div class="footer">
-Alguns links podem gerar comissão.
-</div>
-
-</div>
+    </main>
 
 </body>
 </html>
